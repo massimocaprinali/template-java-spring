@@ -109,3 +109,13 @@ task copyJarToServerJar(type: Copy) {
     }
     into 'build/libs'
 }
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.ibm.cloudgarage'
+version = '0.1-SNAPSHOT'
+
+dependencies {
+compile 'commons-lang:commons-lang:2.3'
+}

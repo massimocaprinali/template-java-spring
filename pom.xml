@@ -4,6 +4,12 @@
   <groupId>com.ibm.cloudgarage</groupId>
   <artifactId>template-java-spring</artifactId>
   <version>0.1-SNAPSHOT</version>
+  <parent>
+    <groupId>dev.appsody</groupId>
+    <artifactId>spring-boot2-stack</artifactId>
+    <version>[0.3,0.4)</version>
+    <relativePath/>
+  </parent>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -87,7 +93,7 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-sleuth</artifactId>
       <version>2.1.1.RELEASE</version>
@@ -102,7 +108,7 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>

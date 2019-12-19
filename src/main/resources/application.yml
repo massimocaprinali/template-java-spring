@@ -2,6 +2,11 @@ spring:
   application:
     name: "${IMAGE_NAME:template-spring-boot}"
 
+opentracing:
+  spring:
+    web:
+      skipPattern: "/api-docs.*|/actuator.*"
+
 hello:
   pattern: "Hello there, %s!"
 
